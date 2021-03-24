@@ -41,12 +41,12 @@ elif(day>31):
 	print("Invalid day exiting... ")
 	exit()
 if day < month_length:
-    day -= 1
+    day += 1
 else:
     day = 1
     if month == 12:
         month = 1
-        year -= 1
+        year += 1
     else:
-        month -= 1
-print("The previous date is [yyyy-mm-dd] %d-%d-%d." % (year, month, day))
+        month += 1
+print("The next date is [yyyy-mm-dd] %d-%d-%d." % (year, month, day))
