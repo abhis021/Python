@@ -15,7 +15,7 @@ class app(Frame):
         Frame.__init__(self)
         self.option_add('*Font', 'arial 20 bold')
         self.pack(expand = YES, fill =BOTH)
-        self.master.title('Voting App')
+        self.master.title('Arithmetic Calculator')
 
         display = StringVar()
         Entry(self, relief=RIDGE, textvariable=display,
