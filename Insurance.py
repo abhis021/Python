@@ -1,35 +1,30 @@
-a= input("enter the email ")
-print("@" in "Contains" +a)
+a = input("enter the email ")
+print("@" in "Contains" + a)
 
-string=input("Enter your name")
+string = input("Enter your name")
 print(string.isupper())
 
 
+string = 'Hello Alien'
 
-string ='Hello Alien'
-
-newstring =''
+newstring = ''
 count1 = 0
 
 count2 = 0
 
 count3 = 0
-  
+
 
 for a in string:
-    if (a.isupper()) == True: 
-
-        count1+= 1
-
-        newstring+=(a.lower())
-   elif (a.islower()) == True:
+    if (a.isupper()) == True:
+        count1 += 1
+        newstring += (a.lower())
+    elif(a.islower()) == True:
         count2+=1
         newstring+=(a.upper()) 
- 
-
-    elif (a.isspace()) == True:
+    elif(a.isspace()) == True:
         count3+= 1
-      newstring+= a 
+        newstring+= a 
 
 print("In original String : ") 
 
