@@ -25,8 +25,8 @@ class Main(MDApp):
                                       ("Column 3", dp(30)),
                                       ("Column 4", dp(30)),
                                       ("Column 5", dp(30)),
-                                  ],
-                                  row_data=[(f"{i + 1}", "1", "2", "3", "4", "5") for i in range(50)])
+        ],
+            row_data=[(f"{i + 1}", "1", "2", "3", "4", "5") for i in range(50)])
         self.tables.open()
 
     def build(self):
