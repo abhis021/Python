@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-dataset=pd.read_csv('twitter.tsv', delimiter='\t')
+dataset=pd.read_csv(r'C:\Users\Abhishek Upadhyay\Documents\GitHub\Python\Resources\twitter.tsv', delimiter='\t')
 
 dataset['id,label,tweet'][0]
 
