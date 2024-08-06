@@ -11,7 +11,7 @@ MASTER = "Aman"
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[0].id)
+engine.setProperty('voice', voices[1].id)
 #Speak function will speak/Pronounce the string which is passed to it
 def speak(text):
     engine.say(text)
