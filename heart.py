@@ -20,7 +20,7 @@ def txt():
     pen.up()
     pen.setpos(-68,95)
     pen.down()
-    pen.color('blue')
+    pen.color('white')
     pen.write("I LOVE YOU", font=("Verdana", 12, "bold"))
 
 heart()
