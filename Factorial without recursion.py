@@ -1,3 +1,5 @@
+#code by abhis021@github
+
 n=int(input("Enter number:"))
 fact=1
 while(n>0):
@@ -5,4 +7,3 @@ while(n>0):
     n=n-1
 print("Factorial of the number is: ")
 print(fact)
-#code by abhis021@github
