@@ -1,9 +1,8 @@
-import os
 import sys
 import pyqrcode
 from PyQt5 import QtGui, QtCore, QtWidgets
 from pyqrcode import QRCode
-from PIL.ImageQt import ImageQt
+from PIL import ImageQt
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 # import matplotlib.pyplot as plt
