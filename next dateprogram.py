@@ -1,45 +1,34 @@
-#code by abhis021@github
-year = int(input("Input a year[1900-2025]: "))
-if(year<1900):
-	print("Invalid Year exiting... ")
-	exit()
-elif(year>2025):
-	print("Invalid Year exiting... ")
-	exit()
-if (year % 400 == 0):
-    leap_year = True
-elif (year % 100 == 0):
-    leap_year = False
-elif (year % 4 == 0):
+# Code by abhis021@github
+day = int(input("Input a day [1-31]: "))
+if day < 1 or day > 31:
+    print("Invalid day, exiting...")
+    exit()
+
+month = int(input("Input a month [1-12]: "))
+if month < 1 or month > 12:
+    print("Invalid month, exiting...")
+    exit()
+
+year = int(input("Input a year [1900-2025]: "))
+if year < 1900 or year > 2025:
+    print("Invalid year, exiting...")
+    exit()
+
+# Check if it's a leap year
+if (year % 400 == 0) or (year % 100 != 0 and year % 4 == 0):
     leap_year = True
 else:
     leap_year = False
-month = int(input("Input a month [1-12]: "))
 
-if(month<1):
-	print("Invalid month exiting... ")
-	exit()
-elif(month>12):
-	print("Invalid month exiting... ")
-	exit()
+# Determine the number of days in the month
 if month in (1, 3, 5, 7, 8, 10, 12):
     month_length = 31
 elif month == 2:
-    if leap_year:
-        month_length = 29
-    else:
-        month_length = 28
+    month_length = 29 if leap_year else 28
 else:
     month_length = 30
 
-
-day = int(input("Input a day [1-31]: "))
-if(day<1):
-	print("Invalid day exiting... ")
-	exit()
-elif(day>31):
-	print("Invalid day exiting... ")
-	exit()
+# Calculate the next day
 if day < month_length:
     day += 1
 else:
@@ -49,4 +38,6 @@ else:
         year += 1
     else:
         month += 1
-print("The next date is [yyyy-mm-dd] %d-%d-%d." % (year, month, day))
+
+# Print the result in dd-mm-yyyy format
+print(f"The next date is [dd-mm-yyyy] {day:02d}-{month:02d}-{year}.")

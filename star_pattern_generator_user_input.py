@@ -6,4 +6,4 @@ for num in range(rows):
 if rows >= 9:
     print("Impressive")
 else:
-    print("Nezumi XD")
+    print("Nezumi XD")  
